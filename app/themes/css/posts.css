@@ -1305,7 +1305,7 @@ body {
         -moz-transition: all 0.25s linear;
         transition: all 0.25s linear;
         font-size: 14px;
-        color: #fff;
+        color: #891828;
         font-weight: 600;
         text-align: left;
         text-decoration: none;
@@ -1322,7 +1322,7 @@ body {
 }
 
     .menu-item a:hover {
-        background-color: #460C14;
+        background-color: #e8dfda;
     }
 
 #navigation {
@@ -1330,7 +1330,7 @@ body {
     font-size: 13px;
     float: left;
     width: 100%;
-    background-color: #891828;
+    background-color: #f3eeea;
 }
 
     #navigation select {
