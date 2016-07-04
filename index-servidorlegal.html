@@ -1,0 +1,245 @@
+﻿<!doctype html>
+<html ng-app="Servidor">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Servidor Legal - Debate direitos dos servidores públicos</title>
+
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+
+    <meta charset="utf-8">
+    <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="title" content="Cassel Ruzzarin Santos Rodrigues - Advogados">
+    <meta name="description" content="">
+    <!-- Google will often use this as its description of your page/site. Make it good. -->
+    <meta property="og:site_name" content="Cassel Ruzzarin Santos Rodrigues - Advogados" />
+    <meta property="og:title" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:type" content="website" />
+    <meta property="fb:admins" content="" />
+    <!--<meta property="og:video" content="" />
+    <meta property="og:video:type" content="" />-->
+    <meta property="og:image" content="http://servidor.adv.br/img/apple-touch-icon.png" />
+    <meta name="author" content=" ">
+
+    <!-- Dublin Core Metadata : http://dublincore.org/ -->
+    <meta name="DC.title" content="Cassel Ruzzarin Santos Rodrigues - Advogados">
+    <meta name="DC.subject" content="">
+    <meta name="DC.creator" content="Jonathas Holanda">
+    <!--  Mobile Viewport Fix -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <!-- This is the traditional favicon. -->
+    <link rel="shortcut icon" type="image/x-icon" href="http://servidor.adv.br/img/favicon.ico" />
+    <!-- The is the icon for iOS's Web Clip. -->
+    <link rel="apple-touch-icon" href="http://servidor.adv.br/img/apple-touch-icon.png">
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="http://servidor.adv.br/css/angular-busy.min.css" media="screen" />
+
+    <!-- CSS: screen, mobile & print are all in the same file -->
+
+    <link rel="stylesheet" href="app/bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="app/bower_components/bootstrap/dist/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="app/themes/css/utils.css">
+    <link rel="stylesheet" href="app/themes/css/bootstrap-custom.css">
+    <link rel="stylesheet" href="app/themes/css/estilos.css">
+    <link rel="stylesheet" href="app/themes/css/posts.css">
+    <link rel="stylesheet" href="app/themes/css/social-share.css">
+
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+
+    <link rel="stylesheet" href="app/themes/owl-carousel/owl.carousel.css" />
+    <link rel="stylesheet" href="app/themes/owl-carousel/owl.theme.css" />
+
+    <script src="/app/bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="/app/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="/app/bower_components/angular/angular.min.js"></script>
+    <script src="/app/bower_components/angular/angular-sanitize.js"></script>
+    <script src="/app/bower_components/angular-route/angular-route.min.js"></script>
+    <script src="http://servidor.adv.br/js/angular-busy.min.js"></script>
+
+    <script src="app.js"></script>
+    <script src="app/js/configValues.js"></script>
+    <script src="app/controllers/Main/main-controller.js"></script>
+    <script src="app/controllers/BlogServidorLegal/Posts/posts-controller.js"></script>
+    <script src="app/controllers/BlogServidorLegal/Posts/posts-service.js"></script>
+    <script src="app/controllers/Campos de Interesse/camposdeinteresse-controller.js"></script>
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="container">
+            <div id="header">
+                <h1 id="logo">
+                    <a href="http://www.blogservidorlegal.com.br">Servidor Legal</a>
+                </h1>
+                <h3 id="descricao">Debate direitos dos servidores públicos</h3>
+                <!-- END descrição -->
+                <div class="widget-header">
+                </div>
+            </div>
+            <!--#header-->
+            <div class="secondary-navigation">
+                <nav id="navigation">
+                    <ul id="menu-menu-1" class="menu sf-js-enabled">
+                        <li id="menu-item-29" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-29"><a href="/servidorlegal/index-servidorlegal.html#/posts">Home</a></li>
+                        <li id="menu-item-35" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-35"><a href="http://www.blogservidorlegal.com.br/category/artigos/">Artigos</a></li>
+                        <li id="menu-item-39" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-39"><a href="http://www.blogservidorlegal.com.br/category/noticias/">Notícias</a></li>
+                        <li id="menu-item-37" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-37"><a href="http://www.blogservidorlegal.com.br/category/julgados/">Julgados</a></li>
+                        <li id="menu-item-33" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-33"><a href="/servidorlegal/index-servidorlegal.html#/sobre-nos">Sobre nós</a></li>
+                        <li id="menu-item-31" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-31"><a href="/servidorlegal/index-servidorlegal.html#/contato">Contato</a></li>
+                    </ul>
+                    <select>
+                        <option selected="selected" value="">Go to...</option>
+                        <option value="/servidorlegal/index-servidorlegal.html#/posts">Home</option>
+                        <option value="http://www.blogservidorlegal.com.br/category/artigos/">Artigos</option>
+                        <option value="http://www.blogservidorlegal.com.br/category/noticias/">Notícias</option>
+                        <option value="http://www.blogservidorlegal.com.br/category/julgados/">Julgados</option>
+                        <option value="/servidorlegal/index-servidorlegal.html#/sobre-nos">Sobre nós</option>
+                        <option value="/servidorlegal/index-servidorlegal.html#/contato">Contato</option>
+                    </select>
+                </nav>
+            </div>
+        </div>
+        <!--.container-->
+    </header>
+
+
+    <div class="main-container" id="page">        
+        <div class="col-md-9 col-xs-12">
+            <div ng-view=""></div>
+        </div>
+        <div class="col-md-3 col-xs-12">
+            <div id="sidebars" class="g">
+                <div class="sidebar">
+                    <ul class="sidebar_list">
+                        <li class="widget widget-sidebar searchform">
+                            <h3>Pesquisar</h3>
+                            <input type="text" class="searching" value="Buscar no site..." name="s" id="searchblog" onblur="if (this.value == '') {this.value = 'Buscar no site...';}" onfocus="if (this.value == 'Buscar no site...') {this.value = '';}">
+                            <input type="button" id="btnsearch" value="Buscar" class="submit">
+                        </li>
+                        <li class="widget widget-sidebar">
+                            <h3>Campos de Interesse</h3>
+                            <ul ng->
+                                <li class="cat-item"><a href="http://www.blogservidorlegal.com.br/categoria/artigos/" title="Artigos opinativos que serão elaborados pelos membros do escritório. Publicação semanal toda sexta-feira.">Artigos</a>
+                                </li>
+                                <li class="cat-item"><a href="http://www.blogservidorlegal.com.br/categoria/julgados/" title="Julgado ou informativo relevante para o público. Publicação semanal toda segunda-feira.">Julgados</a>
+                                </li>
+                                <li class="cat-item"><a href="http://www.blogservidorlegal.com.br/categoria/noticias/" title="Informações e artigos de terceiros que interessam aos servidores público. Publicação semanal toda quarta-feira.">Notícias</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="widget widget-sidebar">
+                            <h3>Categorias</h3>
+                            <ul>
+                                <li class="cat-item"><a href="http://www.blogservidorlegal.com.br/categoria/artigos/" title="Artigos opinativos que serão elaborados pelos membros do escritório. Publicação semanal toda sexta-feira.">Artigos</a>
+                                </li>
+                                <li class="cat-item"><a href="http://www.blogservidorlegal.com.br/categoria/julgados/" title="Julgado ou informativo relevante para o público. Publicação semanal toda segunda-feira.">Julgados</a>
+                                </li>
+                                <li class="cat-item"><a href="http://www.blogservidorlegal.com.br/categoria/noticias/" title="Informações e artigos de terceiros que interessam aos servidores público. Publicação semanal toda quarta-feira.">Notícias</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="widget widget-sidebar">
+                            <div class="textwidget">
+                                <a href="http://materiais.servidor.adv.br/ebook-as-etapas-da-greve-dos-servidores-publicos" target="_blank">
+                                    <img src="/servidorlegal/app/themes/img/Banner-Blog-300x250.jpg" alt="Guia para dirigentes sindicais"></a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>      
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-widgets">
+                <div class="f-widget f-widget-1">
+                </div>
+                <div class="f-widget f-widget-2">
+                </div>
+                <div class="f-widget last">
+                </div>
+            </div>
+        </div>
+        <div class="copyrights">
+            <div class="row" id="copyright-note">
+                <span><a href="http://www.blogservidorlegal.com.br/" title="Debate direitos dos servidores públicos">Servidor Legal</a> Copyright © <span id="anoatual"></span>.</span>
+                <div class="top">Criado por <a href="http://quicked.com.br/">Quicked</a>. <a href="javascript:void(0)" onclick="GotoTop();" class="toplink">Ir para o Topo ↑</a></div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app/themes/owl-carousel/owl.carousel.min.js"></script>
+    <script src="http://servidor.adv.br/js/jquery.carousel.min.js"></script>
+
+    <script type="text/javascript">
+
+        function GotoTop() {
+            $('html,body').animate({ scrollTop: 0 }, 'fast');
+        }
+
+        //New Slider jQuery Start
+        $(document).ready(function () {
+
+            var searchblog = $('#searchblog');
+            var btnsearch = $('#btnsearch');
+            btnsearch.click(function () {
+                document.location.href = "/servidorlegal/index-servidorlegal.html#/blogdireitodosconcursos/posts/" + searchblog.val()
+            });
+
+            var d = new Date();
+            var n = d.getFullYear();
+            document.getElementById("anoatual").innerHTML = n;
+
+            $(".destaque-advogados").carousel({
+                pagination: false,
+                loop: true,
+                autoSlide: true,
+                dispItems: 6
+            });
+
+            $(".slider").carousel({
+                pagination: false,
+                loop: true,
+                autoSlide: true,
+                autoSlideInterval: 5000,
+                dispItems: 1,
+                nextBtn: '<input type="button" value="&gt;" />',
+                prevBtn: '<input type="button" value="&lt;" />',
+                prevBtnInsert: 'insertBefore',
+                nextBtnInsert: 'insertBefore'
+            });
+
+            $("#owl-demo").owlCarousel({
+
+                navigation: true, // Show next and prev buttons
+                slideSpeed: 300,
+                paginationSpeed: 400,
+                singleItem: true,
+                navigationText: ["&lt;", "&gt"],
+
+                // "singleItem:true" is a shortcut for:
+                // items : 1,
+                // itemsDesktop : false,
+                // itemsDesktopSmall : false,
+                // itemsTablet: false,
+                // itemsMobile : false
+
+            });
+
+
+            //Mobile Nav Menu Start
+            jQuery('.m-menu').click(function () {
+                jQuery('header nav ul').slideToggle();
+            });
+            //Mobile Nav Menu End
+        });
+    </script>
+
+</body>
+
+</html>

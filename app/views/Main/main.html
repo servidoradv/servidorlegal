@@ -1,0 +1,156 @@
+
+
+<div id="destaque">
+    <aside>
+        <ul>
+            <li><a href="http://servidor.adv.br/perfis/entidades-de-classe">Entidades de Classe</a></li>
+            <li><a href="http://servidor.adv.br/perfis/candidatos-a-cargo-publico">Concursos P�blicos</a></li>
+            <li><a href="http://servidor.adv.br/perfis/servidores-ativos">Servidores Ativos</a></li>
+            <li><a href="http://servidor.adv.br/perfis/servidores-inativos">Servidores Aposentados</a></li>
+        </ul>
+    </aside>
+
+    <div class="sub-menu">
+        <h2><span>O que voc� deseja?</span></h2>
+
+        <!-- copy-start -->
+        <div class="col-2 bc"><img src="img/ui/team.png" alt="" /><span><a href="http://servidor.adv.br/escritorio.html">ESCRIT�RIO</a></span></div>
+        <div class="col-2 bc"><img src="img/ui/team2.png" alt="" /><span><a href="http://servidor.adv.br/advogados.html">ADVOGADOS</a></span></div>
+        <!-- copy-End -->
+
+        <ul>
+            <li class="item1"><a href="http://portfolio.servidor.adv.br/#!/pessoas/">Conhecer A��es Individuais</a></li>
+            <li class="item2"><a href="http://portfolio.servidor.adv.br/#!/assuntos/">Conhecer A��es Coletivas</a></li>
+            <li class="item3"><a href="http://portfolio.servidor.adv.br/#!/entidades/">Entender as A��es da minha Entidade</a></li>
+            <li class="item4"><a href="/contato.html">Reunir-me com um Advogado</a></li>
+        </ul>
+    </div>
+
+    <div class="campos-de-interesse box-itens-escritorio" ng-controller="CamposdeInteresseCtrl">
+        <ul class="campos_interesse_listagem campos_interesse_listagem_2">
+            <li ng-repeat="resultado in lista">
+                <img src="{{resultado.imagem}}" />
+                <h1>{{resultado.title}}</h1>
+            </li>
+        </ul>
+    </div>
+    <div class="campos-de-interesse box-itens-escritorio" ng-controller="UtilidadeCtrl">
+
+        
+        <div class="colunas-home coluna-1" style="background: url('{{coluna1.imagem}}') no-repeat">
+            <a href="{{coluna1.url}}?url=yes"><h1 ng-bind-html="coluna1.titulo | limitTo: 50"></h1></a>
+        </div>
+        <div class="colunas-home coluna-2" style="background: url('{{coluna2.imagem}}') no-repeat">
+            <a href="{{coluna2.url}}?url=yes"><h1 ng-bind-html="coluna2.titulo | limitTo: 50"></h1></a>
+        </div>
+        <div class="colunas-home coluna-3" style="background: url('{{coluna3.imagem}}') no-repeat">
+            <a href="{{coluna3.url}}?url=yes"><h1 ng-bind-html="coluna3.titulo | limitTo: 50"></h1></a>
+        </div>
+        <div class="cleafix"></div>
+        <ul class="colunas-home-linha2">
+            <li class="colunas-home coluna-4" style="background: url('{{coluna4.imagem}}') no-repeat">
+                <a href="{{coluna4.url}}?url=yes"><h1 ng-bind-html="coluna4.titulo | limitTo: 50"></h1></a>
+            </li>
+            <li class="colunas-home coluna-5" style="background: url('{{coluna5.imagem}}') no-repeat">
+                <a href="{{coluna5.url}}?url=yes"><h1 ng-bind-html="coluna5.titulo | limitTo: 50"></h1></a>
+            </li>
+            <li id="coluna6" class="colunas-home coluna-6" style="background: url('{{coluna6.imagem}}') no-repeat" onmouseover="Aumenta('coluna6')">
+                <a href="{{coluna6.url}}?url=yes"><h1 ng-bind-html="coluna6.titulo | limitTo: 50"></h1></a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<script>
+    function Aumenta(id)
+    {
+        $(id).css('position', 'absolute');
+        $(id).css('width', '600px');
+    }
+</script>
+
+<style>
+    .colunas-home
+    {
+        width:100%;
+        text-align: left;
+    }
+    
+    .coluna-1
+    {
+        width: 642px;
+        height: 385px;
+        background-color: #333;
+        margin-right: 5px;
+        margin-bottom: 5px;
+        padding: 20px;
+        float:left;
+    }
+    
+    .coluna-2, .coluna-3
+    {
+        width: 430px;
+        height: 190px;
+        margin-bottom: 5px;
+        float: right;
+        padding: 20px;
+    }
+    
+    .coluna-2 h1, .coluna-3 h1
+    {
+        top:130px;
+    }
+    
+    .colunas-home  h1
+    {
+        color:white;
+        font-family: 'Open Sans', 'serif';
+        font-size: 18px;
+        position: relative;
+        line-height: 30px
+    }
+    
+    .coluna-1 h1
+    {
+        top:250px;
+    }
+    
+    .coluna-4 h1, .coluna-5 h1, .coluna-6 h1
+    {
+        top:110px;
+        line-height: 25px;
+    }
+    
+    .coluna-4, .coluna-5, .coluna-6
+    {
+        width: 355px!important;
+        height: 190px;
+    }
+    
+    .coluna-4
+    {
+        margin-right: 2.5px!important;
+    }
+    
+    .coluna-5
+    {
+        margin-left: 2.5px!important;
+        margin-right: 2.5px!important;
+    }
+    
+    .coluna-6
+    {
+        margin-left: 2.5px!important;
+    }
+    
+    .colunas-home-linha2
+    {
+        list-style-type: none;
+    }
+    
+    .colunas-home-linha2 li
+    {
+        float:left;
+    }
+    
+</style>
