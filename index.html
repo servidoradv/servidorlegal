@@ -2,8 +2,8 @@
 
 <head>
     <title>Servidor Legal - Debate direitos dos servidores públicos</title>
-    
-    
+
+
 
     <meta charset="utf-8">
     <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
@@ -31,7 +31,7 @@
     <meta name="DC.title" content="Cassel Ruzzarin Santos Rodrigues - Advogados">
     <meta name="DC.subject" content="{{tituloPaginaURL}}">
     <meta name="DC.creator" content="Quicked - Soluções em Tecnologia">
-    
+
     <!-- This is the traditional favicon. -->
     <link rel="shortcut icon" type="image/x-icon" href="http://servidor.adv.br/img/favicon.ico" />
     <!-- The is the icon for iOS's Web Clip. -->
@@ -73,7 +73,7 @@
     <script src="app/controllers/Campos de Interesse/camposdeinteresse-controller.js"></script>
     <script src="app/controllers/Campos de Interesse/camposdeinteresse-service.js"></script>
 
-    <base href="/servidorlegal/#" />
+    <base href="/" />
 </head>
 
 <body>
@@ -81,7 +81,7 @@
         <div class="container">
             <div id="header">
                 <h1 id="logo">
-                    <a href="/servidorlegal/index.html#/">
+                    <a href="/index.html#/">
                         <img src="app/themes/img/logo-servidorlegal.png">
                     </a>
                 </h1>
@@ -98,12 +98,12 @@
                     </div>
                     <div class="collapse navbar-collapse" id="navTop">
                         <ul id="navbar" class="menu sf-js-enabled">
-                            <li class="menu-item"><a href="/servidorlegal/index.html#/">Home</a></li>
-                            <li class="menu-item"><a href="/servidorlegal/index.html#/posts/categoria/Artigos/">Artigos</a></li>
-                            <li class="menu-item"><a href="/servidorlegal/index.html#/posts/categoria/Notícias/">Notícias</a></li>
-                            <li class="menu-item"><a href="/servidorlegal/index.html#/posts/categoria/Julgados/">Julgados</a></li>
-                            <li class="menu-item"><a href="/servidorlegal/index.html#/sobre-nos">Sobre nós</a></li>
-                            <li class="menu-item"><a href="/servidorlegal/index.html#/contato">Contato</a></li>
+                            <li class="menu-item"><a href="/index.html#/">Home</a></li>
+                            <li class="menu-item"><a href="/index.html#/posts/categoria/Artigos/">Artigos</a></li>
+                            <li class="menu-item"><a href="/index.html#/posts/categoria/Notícias/">Notícias</a></li>
+                            <li class="menu-item"><a href="/index.html#/posts/categoria/Julgados/">Julgados</a></li>
+                            <li class="menu-item"><a href="/index.html#/sobre-nos">Sobre nós</a></li>
+                            <li class="menu-item"><a href="/index.html#/contato">Contato</a></li>
                         </ul>
                     </div>
                 </nav>
@@ -146,13 +146,13 @@
                             <h3>Categorias</h3>
                             <ul class="list-unstyled">
                                 <li class="cat-item">
-                                    <a href="/servidorlegal/index.html#/posts/categoria/Artigos/" title="Artigos opinativos que serão elaborados pelos membros do escritório. Publicação semanal toda sexta-feira."><i class="glyphicon glyphicon-play"></i>&nbsp;Artigos</a>
+                                    <a href="/index.html#/posts/categoria/Artigos/" title="Artigos opinativos que serão elaborados pelos membros do escritório. Publicação semanal toda sexta-feira."><i class="glyphicon glyphicon-play"></i>&nbsp;Artigos</a>
                                 </li>
                                 <li class="cat-item">
-                                    <a href="/servidorlegal/index.html#/posts/categoria/Julgados/" title="Julgado ou informativo relevante para o público. Publicação semanal toda segunda-feira."><i class="glyphicon glyphicon-play"></i>&nbsp;Julgados</a>
+                                    <a href="/index.html#/posts/categoria/Julgados/" title="Julgado ou informativo relevante para o público. Publicação semanal toda segunda-feira."><i class="glyphicon glyphicon-play"></i>&nbsp;Julgados</a>
                                 </li>
                                 <li class="cat-item">
-                                    <a href="/servidorlegal/index.html#/posts/categoria/Notícias/" title="Informações e artigos de terceiros que interessam aos servidores público. Publicação semanal toda quarta-feira."><i class="glyphicon glyphicon-play"></i>&nbsp;Notícias</a>
+                                    <a href="/index.html#/posts/categoria/Notícias/" title="Informações e artigos de terceiros que interessam aos servidores público. Publicação semanal toda quarta-feira."><i class="glyphicon glyphicon-play"></i>&nbsp;Notícias</a>
                                 </li>
                             </ul>
                         </li>
@@ -339,7 +339,7 @@
         $("input.busca").keypress(function (e) {
             if ((e.which && e.which == 13) || (e.keyCode && e.keyCode == 13)) {
                 Buscar();
-            } 
+            }
         });
 
         function Buscar() {
