@@ -19,7 +19,7 @@
                 </div>
             </div>
         </div>
-        
+
         <div class="post excerpt text-left" ng-repeat="p in lista">
             <div class="post-data-faixa">
                 <div class="canto-data"></div>
@@ -36,9 +36,9 @@
                             Por
                             <a ng-href="{{'/servidorlegal/index.html#/posts/autor/' + p.autores}}" title="{{p.autores}}" rel="nofollow">{{p.autores}}</a>
                         </div>
-                        <img src="app/themes/img/court.png" style="padding-left: 20px;" />
+                        <!-- <img src="app/themes/img/court.png" style="padding-left: 20px;" /> -->
                         <div class="subNoticiasSecao" ng-repeat="category in p.categorias">
-                            <a ng-href="{{'/servidorlegal/index.html#/posts/categoria/' + category}}" title="{{category}}" rel="nofollow"><span>{{category}}</span></a>
+                            <a ng-href="{{'/servidorlegal/index.html#/posts/categoria/' + category}}" title="{{category}}" rel="nofollow"><span>#{{category}}</span></a>
                         </div>
                         <div class="subNoticiasCampos">
                             <span ng-repeat="campo in p.camposdeInteresse">

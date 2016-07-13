@@ -35,9 +35,9 @@
                             Por
                             <a href="{{'/servidorlegal/index.html#/posts/autor/' + item.autores}}" title="{{item.autores}}" rel="nofollow">{{item.autores}}</a>
                         </div>
-                        <img src="app/themes/img/court.png" style="padding-left: 20px;" />
+                        <!-- <img src="app/themes/img/court.png" style="padding-left: 20px;" /> -->
                         <div class="subNoticiasSecao" ng-repeat="category in item.categorias">
-                            <a href="{{'/servidorlegal/index.html#/posts/categoria/' + category}}" title="{{category}}" rel="nofollow"><span>{{category}}</span></a>
+                            <a href="{{'/servidorlegal/index.html#/posts/categoria/' + category}}" title="{{category}}" rel="nofollow"><span>#{{category}}</span></a>
                         </div>
                         <div class="subNoticiasCampos">
                             <span ng-repeat="campo in item.camposdeInteresse">
