@@ -9,12 +9,12 @@
                 <div class="data"><img src="app/themes/img/time.png" />&nbsp;<div class="subNoticiasData" id="DataHoje"></div></div>
             </div>
             <h2 class="title">
-                <a href="/servidorlegal/index.html#/" title="Nenhum post encontrado">Nenhum post encontrado</a>
+                <a href="/index.html#/" title="Nenhum post encontrado">Nenhum post encontrado</a>
             </h2>
             <div class="row">
                 <div class="col-md-12 col-xs-12">
                     <div class="post-corpo">
-                        <p>Volte para a <a href="/servidorlegal/index.html#/">Home</a> e veja todos os posts do Servidor Legal.</p>
+                        <p>Volte para a <a href="/index.html#/">Home</a> e veja todos os posts do Servidor Legal.</p>
                     </div>
                 </div>
             </div>
@@ -33,15 +33,15 @@
                         <img src="app/themes/img/user.png" />
                         <div class="subNoticiasPor">
                             Por
-                            <a href="{{'/servidorlegal/index.html#/posts/autor/' + item.autores}}" title="{{item.autores}}" rel="nofollow">{{item.autores}}</a>
+                            <a href="{{'/index.html#/posts/autor/' + item.autores}}" title="{{item.autores}}" rel="nofollow">{{item.autores}}</a>
                         </div>
                         <!-- <img src="app/themes/img/court.png" style="padding-left: 20px;" /> -->
                         <div class="subNoticiasSecao" ng-repeat="category in item.categorias">
-                            <a href="{{'/servidorlegal/index.html#/posts/categoria/' + category}}" title="{{category}}" rel="nofollow"><span>#{{category}}</span></a>
+                            <a href="{{'/index.html#/posts/categoria/' + category}}" title="{{category}}" rel="nofollow"><span>#{{category}}</span></a>
                         </div>
                         <div class="subNoticiasCampos">
                             <span ng-repeat="campo in item.camposdeInteresse">
-                                <a ng-href="/servidorlegal/index.html#/posts/interesse/{{campo.title}}" style="background-color:{{campo.cor}};padding:5px 10px;color:white;font-weight:bold;font-size:11px;border-radius:1px;margin-right: 3px;">
+                                <a ng-href="/index.html#/posts/interesse/{{campo.title}}" style="background-color:{{campo.cor}};padding:5px 10px;color:white;font-weight:bold;font-size:11px;border-radius:1px;margin-right: 3px;">
                                     <img ng-src="{{campo.iconeBranco}}" class="interesses-iconebranco" />&nbsp;{{campo.title}}
                                 </a>
                             </span>
@@ -65,7 +65,7 @@
                 <div class="col-md-12">
                     <h5 class="tagsPost">
                         <strong>Tags</strong>
-                        <span ng-repeat="tag in Tags"><a ng-href="{{'/servidorlegal/index.html#/posts/tags/' + tag.nome}}" title="{{tag.nome}}" rel="nofollow">{{tag.nome}}&nbsp;|&nbsp;</a></span>
+                        <span ng-repeat="tag in Tags"><a ng-href="{{'/index.html#/posts/tags/' + tag.nome}}" title="{{tag.nome}}" rel="nofollow">{{tag.nome}}&nbsp;|&nbsp;</a></span>
                         <span ng-show="NenhumTaglocalizada">Nenhuma tag relacionada.</span>
                     </h5>
                     <br>
@@ -74,19 +74,19 @@
             <div class="row">
                 <div class="col-md-12 text-left">
                     <div class="share-links">
-                        <a href="{{'http://www.facebook.com/sharer.php?u=http://www.servidor.adv.br/servidorlegal/index.html#/post/' + item.url }}" class="fa fa-facebook" target="_blank">
+                        <a href="{{'http://www.facebook.com/sharer.php?u=http://www.servidor.adv.br/index.html#/post/' + item.url }}" class="fa fa-facebook" target="_blank">
                         </a>
 
-                        <a href="{{'https://plus.google.com/share?url=http://www.servidor.adv.br/servidorlegal/index.html#/post/' + item.url }}" class="fa fa-google-plus" target="_blank">
+                        <a href="{{'https://plus.google.com/share?url=http://www.servidor.adv.br/index.html#/post/' + item.url }}" class="fa fa-google-plus" target="_blank">
                         </a>
 
-                        <a href="{{'http://www.linkedin.com/shareArticle?mini=true&amp;url=http://www.servidor.adv.br/servidorlegal/index.html#/post/' + item.url }}" class="fa fa-linkedin" target="_blank">
+                        <a href="{{'http://www.linkedin.com/shareArticle?mini=true&amp;url=http://www.servidor.adv.br/index.html#/post/' + item.url }}" class="fa fa-linkedin" target="_blank">
                         </a>
 
-                        <a href="{{'https://twitter.com/share?url=http://www.servidor.adv.br/servidorlegal/index.html#/post/' + item.url + '&amp;text='+ item.title +'&amp;hashtags=blogservidorlegal'}}" class="fa fa-twitter" target="_blank">
+                        <a href="{{'https://twitter.com/share?url=http://www.servidor.adv.br/index.html#/post/' + item.url + '&amp;text='+ item.title +'&amp;hashtags=blogservidorlegal'}}" class="fa fa-twitter" target="_blank">
                         </a>
 
-                        <a href="{{'mailto:?Subject='+ item.title + '&amp;Body='+ item.breveDescricao +' http://www.servidor.adv.br/servidorlegal/index.html#/post/' + item.url }}" class="fa fa-envelope-o">
+                        <a href="{{'mailto:?Subject='+ item.title + '&amp;Body='+ item.breveDescricao +' http://www.servidor.adv.br/index.html#/post/' + item.url }}" class="fa fa-envelope-o">
                         </a>
                     </div>
                 </div>
@@ -105,7 +105,7 @@
                         Nenhum post relacionado.
                     </div>
                     <div class="col-md-4 col-xs-6" ng-repeat="PostRel in PostRelacionado">
-                        <a ng-href="{{'/servidorlegal/index.html#/post/' + PostRel.url}}" title="{{PostRel.title}}" rel="nofollow">{{PostRel.title}}</a>
+                        <a ng-href="{{'/index.html#/post/' + PostRel.url}}" title="{{PostRel.title}}" rel="nofollow">{{PostRel.title}}</a>
                     </div>
                 </div>
             </div>
