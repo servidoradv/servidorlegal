@@ -34,7 +34,7 @@
                         <img src="app/themes/img/user.png" />
                         <div class="subNoticiasPor">
                             Por
-                            <a ng-href="{{'/index.html#/posts/autor/' + p.autores}}" title="{{p.autores}}" rel="nofollow">{{p.autores}}</a>
+                            <a ng-href="{{'/index.html#/posts/autor/' + p.autores}}" title="{{p.autores}}" rel="nofollow">{{p.autores == 'Lorranne de Souza Oliveira' ? 'Blog Servidor Legal' : p.autores}}</a>
                         </div>
                         <!-- <img src="app/themes/img/court.png" style="padding-left: 20px;" /> -->
                         <div class="subNoticiasSecao" ng-repeat="category in p.categorias">

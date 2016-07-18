@@ -122,7 +122,7 @@
                       <li class="widget widget-sidebar ng-scope">
                             <h3>Suporte Jurídico</h3>
                             <div class="textwidget">
-                                <a target="_blank" href="http://servidor.adv.br/advogados.html?utm_source=banner%20-%20blog%20&amp;utm_medium=blog%20direito%20dos%20concursos&amp;utm_campaign=Visitas%20-%20banner-%20blog">
+                                <a target="_blank" href="/index.html#/sobre-nos">
                                     <img src="http://imagizer.imageshack.us/v2/1024x768q90/910/JWpdtu.jpg" width="210">
                                 </a>
                             </div>
@@ -135,7 +135,7 @@
                                 </div>
                                 <ul>
                                     <li class="cat-item" ng-repeat="campo in listaCamposdeInteresse">
-                                        <a href="{{'/servidorlegal/index.html#/posts/interesse/' + campo.title}}" title="{{ campo.title }}"><i class="glyphicon glyphicon-play"></i>&nbsp;{{ campo.title }}</a>
+                                        <a href="{{'/index.html#/posts/interesse/' + campo.title}}" title="{{ campo.title }}"><i class="glyphicon glyphicon-play"></i>&nbsp;{{ campo.title }}</a>
                                     </li>
                                 </ul>
                             </div>
@@ -342,7 +342,7 @@
 
         function Buscar() {
             var searchblog = $('#searchblog');
-            document.location.href = "/servidorlegal/index.html#/posts/buscar/" + searchblog.val()
+            document.location.href = "/index.html#/posts/buscar/" + searchblog.val()
         }
 
         function GotoTop() {
