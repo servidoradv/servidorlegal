@@ -1,7 +1,7 @@
 version: '2'
 
 services:
-  direito_dos_concursos:
+  servidor_legal:
     image: nginx:alpine
     restart: always
     volumes:
