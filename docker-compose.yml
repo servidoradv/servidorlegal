@@ -5,7 +5,7 @@ services:
     image: nginx:alpine
     restart: always
     volumes:
-      - /var/app/servidorlegal:/usr/share/nginx/html:ro
+      - $PWD:/usr/share/nginx/html:ro
 
     ports:
       - "8006:80"
